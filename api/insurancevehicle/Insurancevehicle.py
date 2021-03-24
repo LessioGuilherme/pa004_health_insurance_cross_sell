@@ -1,8 +1,9 @@
 import json
 import pickle
 import pandas as pd
+import numpy  as np
 
-class InsuranceVehicle(object):
+class Insurancevehicle(object):
     def __init__( self ):
         self.home_path = 'C:/Users/Guilherme/Repos/pa004_health_insurance_cross_sell/'
         self.ss_annual_premium                   = pickle.load ( open(self.home_path +'/parameter/ss_annual_premium_scaler.pkl', 'rb'))
